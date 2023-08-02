@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			background-color: #394867;
+			font-size: 16px;
+			color: #333;
+			font-family: Arial, sans-serif;
+		}
+		
+		h1 {
+			font-size: 24px;
+			color: greenyellow;
+			text-align: center;
+			margin-top: 20px;
+			text-decoration: underline;
+		}
+		
+		table {
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			
+		}
+		
+		.name, #email, select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		
+		.btn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<table>
+		<form>
+			<tr>
+				<td><label for="fname">First Name:</label></td>
+				<td><input type="text" id="fname" name="fname" class="name" required></td>
+			</tr>
+			<tr>
+				<td><label for="lname">Last Name:</label></td>
+				<td><input type="text" id="lname" name="lname" class="name" required></td>
+			</tr>
+			<tr>
+				<td><label for="ftname">Father Name:</label></td>
+				<td><input type="text" id="ftname" name="fname" class="name" required></td>
+			</tr>
+			<tr>
+				<td><label for="mname">Mother Name:</label></td>
+				<td><input type="text" id="mname" name="lname" class="name" required></td>
+			</tr>
+			<tr>
+				<td><label for="gender">Gender:</label></td>
+				<td>
+					<select id="gender" name="gender">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="email" id="email" name="email" required></td>
+			</tr>						
+			<tr>
+				<td><label for="number">Contact Number:</label></td>
+				<td><input type="number" id="number" name="number" required></td>
+			</tr>
+			<tr><td>
+			<label for="address">Address: </label></td>
+			<td><textarea name="address" id="address" cols="20" rows="5" placeholder="Permanent Address"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" id="password" name="password" required></td>
+			</tr>
+			<tr>
+				<td><label for="confirm-password">Confirm Password:</label></td>
+				<td><input type="password" id="confirm-password" name="confirm-password" required></td>
+			</tr>
+			<tr>
+				<td style="text-align:center;"><input type="submit" value="Submit" class="btn"></td>
+				<td style="text-align:center;"><input type="reset" value="Reset" class="btn"></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html
